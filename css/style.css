@@ -1,0 +1,47 @@
+/* Точка входа: все стили проекта собираются здесь */
+@import "header.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import "nav.css";
+@import "btn.css";
+@import "hero.css";
+@import "slider.css";
+@import "routes.css";
+@import "modal.css";
+@import "end.css";
+
+
+/* Дизайн-токены */
+:root {
+    --primary: #3252DF;
+    --nav-color: #152C5B;
+}
+
+
+/* 1rem = 10px, считать размеры в уме */
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    width: 144rem;
+    margin: 0 auto;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+/* Разделитель под шапкой */
+.rectangle {
+    border-top: 0.1rem solid #E5E5E5;
+}

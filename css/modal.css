@@ -1,0 +1,111 @@
+/* Модалка записи: фиксированный оверлей + окно по центру */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal--open {
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(21, 44, 91, 0.5);
+}
+
+
+/* Окно формы */
+.modal__window {
+    position: relative;
+
+    width: 42rem;
+    padding: 4rem;
+
+    background-color: #fff;
+    border-radius: 2.5rem;
+    box-shadow: 0 2rem 6rem rgba(21, 44, 91, 0.3);
+}
+
+.modal__title {
+    margin: 0 0 2.5rem;
+
+    color: var(--nav-color);
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.modal__close {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+
+    border: none;
+    background: none;
+
+    color: #B0B0B0;
+    font-size: 3rem;
+
+    cursor: pointer;
+
+    &:hover {
+        color: var(--nav-color);
+    }
+}
+
+
+/* Поля формы */
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* flex перебивает атрибут hidden, возвращаем скрытие */
+.modal__form[hidden] {
+    display: none;
+}
+
+.modal__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    color: var(--nav-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.modal__field input,
+.modal__field select {
+    padding: 1.2rem 1.5rem;
+
+    border: 0.1rem solid #E5E5E5;
+    border-radius: 1rem;
+
+    font-family: inherit;
+    font-size: 1.6rem;
+}
+
+.modal__field input:focus,
+.modal__field select:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* Кнопка отправки и сообщение об успехе */
+.modal__submit {
+    justify-content: center;
+}
+
+.modal__success {
+    color: var(--primary);
+    font-size: 1.6rem;
+    text-align: center;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitebskStay — архитектура Витебска</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="header__logo">Vitebsk<span class="header__logo-accent">Stay.</span></a>
+
+        <nav class="nav">
+            <a href="#" class="nav-item-active">Главная</a>
+            <a href="#" class="nav-item">Достопримечательности</a>
+            <a href="#" class="nav-item">Маршруты</a>
+            <a href="#" class="nav-item">О городе</a>
+        </nav>
+
+        <button class="btn" id="modal-open" type="button">Записаться</button>
+    </header>
+
+    <div class="rectangle"></div>
+
+    <section class="hero">
+        <div class="hero__content">
+    
+            <h1>Архитектурные "жемчужины"<br>
+                Витебска
+            </h1>
+    
+            <h2 class="hero__underground">
+                Мы собрали главные исторические памятники и храмы города,<br>
+                чтобы ваша прогулка по культурной столице стала незабываемой.
+            </h2>
+    
+            <a href="#" class="btn">Смотреть больше</a>
+    
+            <p class="hero__reviews__under__button">25 памятников | 6 маршрутов | 250+ отзывов ⭐⭐⭐⭐⭐</p>
+        </div>
+    
+        <img class="hero__photo" src="img/vitebsk-header.webp" alt="Витебск">
+    </section>
+
+
+    <section class="list__of__routes">
+        <p class="list__most__popular-text">Популярный выбор (цена указана за 1 человека)
+            <a href="https://www.sputnik8.com/ru/vitebsk/pages/chto-posmotret-v-vitebske">источник фото</a></p>
+
+        <div class="route__card">
+            <img src="img/duhovinskiy-kruglik.webp" alt="Духовинский круглик">
+            <span class="route__price">50 BYN</span>
+            <span class="route__name">Духовный круглик</span>
+        </div>
+        <div class="route__card">
+            <img src="img/muzey.webp" alt="Музей">
+            <span class="route__price">25 BYN</span>
+            <span class="route__name">Музей</span>
+        </div>
+        <div class="route__card">
+            <img src="img/peshekhodnyye-marshruty.webp" alt="Пешеходный маршрут">
+            <span class="route__price">35 BYN</span>
+            <span class="route__name">Пешеходный маршрут</span>
+        </div>
+        <div class="route__card">
+            <img src="img/svyato-uspenskiy-sobor.webp" alt="Свято успенский собор">
+            <span class="route__price">40 BYN</span>
+            <span class="route__name">Успенский собор</span>
+        </div>
+        <div class="route__card">
+            <img src="img/voskresenskaya-tserkov.webp" alt="Воскресенская церковь">
+            <span class="route__price">15 BYN</span>
+            <span class="route__name">Воскресенская церковь</span>
+        </div>
+        <div class="route__card">
+            <img src="img/zadvinye.webp" alt="Задвинье">
+            <span class="route__price">20 BYN</span>
+            <span class="route__name">Задвинье</span>
+        </div>
+    </section>
+
+
+    <section class="slider">
+        <div class="slider__viewport">
+            <div class="slider__track">
+                <div class="slider__slide"><img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/1c7b1c66-9994-4d26-9228-41a5b615b15a/-/format/webp/-/quality/smart_retina/-/stretch/off/-/resize/1900x/" alt=""></div>
+                <div class="slider__slide"><img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/bf0ff5d8-cf4a-450b-ae23-63525e1a879b/-/format/webp/-/quality/smart_retina/-/stretch/off/-/resize/1900x/" alt=""></div>
+                <div class="slider__slide"><img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/80fc798a-fdca-47b3-a68c-b1612d257f76/-/format/webp/-/quality/smart_retina/-/stretch/off/-/resize/1900x/" alt=""></div>
+                <div class="slider__slide"><img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/b24e442f-90de-46c7-a0c5-53f81f5e09d3/-/format/webp/-/quality/smart_retina/-/stretch/off/-/resize/1900x/" alt=""></div>
+                <div class="slider__slide"><img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/05b2c533-0f50-4031-992e-cc392b327813/-/format/webp/-/quality/smart_retina/-/stretch/off/-/resize/1900x/" alt=""></div>
+            </div>
+        </div>
+
+        <button class="slider__btn slider__btn--prev" type="button">&#10094;</button> <!-- символ в Unicode &#10094 (стрелка влева) -->
+        <button class="slider__btn slider__btn--next" type="button">&#10095;</button> <!-- символ в Unicode &#10095 (стрелка вправо) -->
+
+        <div class="slider__dots"></div>
+    </section>
+
+
+    <section>
+        <div class="rectangle__end"></div>
+
+        <p class="logo__end">Vitebsk<span class="header__logo-accent">Stay.</span></p>
+    
+        <p class="text__end">Мы сделаем ваш праздничный бьюти-отдых
+            ярким,<br>мгновенным и незабываемым.</p>
+    </section>
+
+    <div class="copyright">Copyright 2026 • All rights reserved • Max</div>
+
+
+    <!-- Модальное окно записи -->
+    <div class="modal" id="modal">
+        <div class="modal__overlay" data-close></div>
+
+        <div class="modal__window">
+            <button class="modal__close" type="button" data-close>&times;</button>
+
+            <h2 class="modal__title">Запись на маршрут</h2>
+
+            <form class="modal__form" id="modal-form">
+                <label class="modal__field">
+                    Имя
+                    <input type="text" name="name" placeholder="Как к вам обращаться" required>
+                </label>
+
+                <label class="modal__field">
+                    Email
+                    <input type="email" name="email" placeholder="you@example.com" required
+                           pattern="[^\s@]+@[^\s@]+\.[^\s@]+" title="Email должен содержать @ и домен, например you@example.com">
+                </label>
+
+                <label class="modal__field">
+                    Маршрут
+                    <select name="route">
+                        <option>Духовный круглик — 50 BYN</option>
+                        <option>Музей — 25 BYN</option>
+                        <option>Пешеходный маршрут — 35 BYN</option>
+                        <option>Успенский собор — 40 BYN</option>
+                        <option>Воскресенская церковь — 15 BYN</option>
+                        <option>Задвинье — 20 BYN</option>
+                    </select>
+                </label>
+
+                <button class="btn modal__submit" type="submit">Отправить заявку</button>
+            </form>
+
+            <p class="modal__success" id="modal-success" hidden>Заявка отправлена. Мы напишем вам на почту.</p>
+        </div>
+    </div>
+
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

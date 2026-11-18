@@ -1,0 +1,19 @@
+/* Шапка: лого слева, навигация, кнопка записи справа */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header__logo {
+    display: flex;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+/* Вторая половина логотипа — тёмная */
+.header__logo-accent {
+    color: #1b1b1b;
+}

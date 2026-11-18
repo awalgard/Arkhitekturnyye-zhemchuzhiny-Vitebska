@@ -1,0 +1,84 @@
+/* Слайдер: окошко обрезает ленту, JS сдвигает её через transform */
+.slider {
+    position: relative;
+
+    width: 70%;
+    margin: 4rem auto;
+}
+
+.slider__viewport {
+    overflow: hidden;
+
+    border-radius: 2.5rem;
+}
+
+.slider__track {
+    display: flex;
+
+    transition: transform 0.5s ease;
+}
+
+.slider__slide {
+    flex: 0 0 100%;
+
+    aspect-ratio: 1900 / 1276;   /* держим пропорции исходных фото */
+}
+
+.slider__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Стрелки по бокам */
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 4.5rem;
+    height: 4.5rem;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: #3a79ff;
+    }
+}
+
+.slider__btn--prev { left: 2rem; }
+.slider__btn--next { right: 2rem; }
+
+
+/* Точки-пагинация, создаются в slider.js */
+.slider__dots {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+.slider__dot {
+    width: 1.2rem;
+    height: 1.2rem;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #B0B0B0;
+
+    cursor: pointer;
+}
+
+.slider__dot--active {
+    background-color: var(--primary);
+}
