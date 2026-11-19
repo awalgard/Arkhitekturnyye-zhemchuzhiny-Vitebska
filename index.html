@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VitebskStay — архитектура Витебска</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
@@ -22,7 +22,7 @@
 
     <div class="rectangle"></div>
 
-    <section class="hero">
+    <section class="hero reveal">
         <div class="hero__content">
     
             <h1>Архитектурные "жемчужины"<br>
@@ -34,7 +34,7 @@
                 чтобы ваша прогулка по культурной столице стала незабываемой.
             </h2>
     
-            <a href="#" class="btn">Смотреть больше</a>
+            <a href="#end" class="btn">Смотреть больше</a>
     
             <p class="hero__reviews__under__button">25 памятников | 6 маршрутов | 250+ отзывов ⭐⭐⭐⭐⭐</p>
         </div>
@@ -43,9 +43,9 @@
     </section>
 
 
-    <section class="list__of__routes">
-        <p class="list__most__popular-text">Популярный выбор (цена указана за 1 человека)
-            <a href="https://www.sputnik8.com/ru/vitebsk/pages/chto-posmotret-v-vitebske">источник фото</a></p>
+    <section class="list__of__routes reveal">
+        <h2 class="list__most__popular-text">Популярный выбор (цена указана за 1 человека)
+            <a href="https://www.sputnik8.com/ru/vitebsk/pages/chto-posmotret-v-vitebske">источник фото</a></h2>
 
         <div class="route__card">
             <img src="img/duhovinskiy-kruglik.webp" alt="Духовинский круглик">
@@ -80,7 +80,7 @@
     </section>
 
 
-    <section class="slider">
+    <div class="slider reveal">
         <div class="slider__viewport">
             <div class="slider__track">
                 <div class="slider__slide"><img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/1c7b1c66-9994-4d26-9228-41a5b615b15a/-/format/webp/-/quality/smart_retina/-/stretch/off/-/resize/1900x/" alt=""></div>
@@ -95,17 +95,23 @@
         <button class="slider__btn slider__btn--next" type="button">&#10095;</button> <!-- символ в Unicode &#10095 (стрелка вправо) -->
 
         <div class="slider__dots"></div>
+    </div>
+
+
+    <section class="audio reveal">
+        <h2 class="audio__title">Гимн города Витебска</h2>
+        <audio class="audio__player" controls src="audio/Gimn-g.Vitebska.mp3"></audio>
     </section>
 
 
-    <section>
+    <footer id="end">
         <div class="rectangle__end"></div>
 
         <p class="logo__end">Vitebsk<span class="header__logo-accent">Stay.</span></p>
-    
+
         <p class="text__end">Мы сделаем ваш праздничный бьюти-отдых
             ярким,<br>мгновенным и незабываемым.</p>
-    </section>
+    </footer>
 
     <div class="copyright">Copyright 2026 • All rights reserved • Max</div>
 
@@ -115,7 +121,7 @@
         <div class="modal__overlay" data-close></div>
 
         <div class="modal__window">
-            <button class="modal__close" type="button" data-close>&times;</button>
+            <button class="modal__close" type="button" data-close></button>
 
             <h2 class="modal__title">Запись на маршрут</h2>
 
@@ -128,7 +134,8 @@
                 <label class="modal__field">
                     Email
                     <input type="email" name="email" placeholder="you@example.com" required
-                           pattern="[^\s@]+@[^\s@]+\.[^\s@]+" title="Email должен содержать @ и домен, например you@example.com">
+                           pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+                           title="Email должен содержать @ и домен, например you@example.com"> <!-- pattern для валидации почты -->
                 </label>
 
                 <label class="modal__field">
@@ -150,7 +157,6 @@
         </div>
     </div>
 
-    <script src="js/slider.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
